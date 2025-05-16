@@ -1,6 +1,6 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+The OpenID Connect Identity Provider Plugin supports Joget DX 9's new Identity Provider Framework to allow users to single sign-on (SSO) using OpenID Connect.
 
 # Getting Help
 
