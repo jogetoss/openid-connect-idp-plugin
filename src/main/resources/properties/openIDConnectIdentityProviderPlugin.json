@@ -1,0 +1,175 @@
+[
+  {
+    "title": "@@idp.plugin.oidc.config.title@@",
+    "properties": [
+      {
+        "name": "callbackUrl",
+        "label": "@@idp.plugin.oidc.config.callbackUrl.label@@",
+        "type": "label",
+        "value": "{{callbackUrl}}",
+        "description": "@@idp.plugin.oidc.config.callbackUrl.desc@@"
+      },
+      {
+        "name": "configName",
+        "label": "@@idp.plugin.oidc.config.configName.label@@",
+        "type": "textfield",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.configName.desc@@"
+      },
+      {
+        "name": "issuerConfig",
+        "label": "@@idp.plugin.oidc.config.issuerConfig.label@@",
+        "type": "selectbox",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.issuerConfig.desc@@",
+        "options": [
+          {
+            "value": "auto",
+            "label": "@@idp.plugin.oidc.config.issuerConfig.auto.label@@"
+          },
+          {
+            "value": "manual",
+            "label": "@@idp.plugin.oidc.config.issuerConfig.manual.label@@"
+          }
+        ]
+      },
+      {
+        "name": "issuer",
+        "label": "@@idp.plugin.oidc.config.issuer.label@@",
+        "type": "textfield",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.issuer.desc@@"
+      },
+      {
+        "name": "authEndpoint",
+        "label": "@@idp.plugin.oidc.config.authEndpoint.label@@",
+        "type": "textfield",
+        "value": "",
+        "control_field": "issuerConfig",
+        "control_value": "manual",
+        "control_use_regex": "false",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.authEndpoint.desc@@"
+      },
+      {
+        "name": "tokenEndpoint",
+        "label": "@@idp.plugin.oidc.config.tokenEndpoint.label@@",
+        "type": "textfield",
+        "value": "",
+        "control_field": "issuerConfig",
+        "control_value": "manual",
+        "control_use_regex": "false",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.tokenEndpoint.desc@@"
+      },
+      {
+        "name": "userInfoEndpoint",
+        "label": "@@idp.plugin.oidc.config.userInfoEndpoint.label@@",
+        "type": "textfield",
+        "value": "",
+        "control_field": "issuerConfig",
+        "control_value": "manual",
+        "control_use_regex": "false",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.userInfoEndpoint.desc@@"
+      },
+      {
+        "name": "jsonWebKeySet",
+        "label": "@@idp.plugin.oidc.config.jsonWebKeySetEndpoint.label@@",
+        "type": "textfield",
+        "value": "",
+        "control_field": "issuerConfig",
+        "control_value": "manual",
+        "control_use_regex": "false",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.jsonWebKeySetEndpoint.desc@@"
+      },
+      {
+        "name": "logoutEndpoint",
+        "label": "@@idp.plugin.oidc.config.logoutEndpoint.label@@",
+        "type": "textfield",
+        "value": "",
+        "control_field": "issuerConfig",
+        "control_value": "manual",
+        "control_use_regex": "false",
+        "required": "false",
+        "description": "@@idp.plugin.oidc.config.logoutEndpoint.desc@@"
+      },
+      {
+        "name": "responseTypes",
+        "label": "@@idp.plugin.oidc.config.responseTypes.label@@",
+        "type": "textfield",
+        "value": "code",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.responseTypes.desc@@"
+      },
+      {
+        "name": "clientId",
+        "label": "@@idp.plugin.oidc.config.clientId.label@@",
+        "type": "textfield",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.clientId.desc@@"
+      },
+      {
+        "name": "clientSecret",
+        "label": "@@idp.plugin.oidc.config.clientSecret.label@@",
+        "type": "textfield",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.clientSecret.desc@@"
+      },
+      {
+        "name": "scope",
+        "label": "@@idp.plugin.oidc.config.scope.label@@",
+        "type": "textfield",
+        "value": "openid profile email",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.scope.desc@@"
+      },
+      {
+        "name": "userProvisioning",
+        "label": "@@idp.plugin.oidc.config.userProvisioning.label@@",
+        "type": "checkbox",
+        "description": "@@idp.plugin.oidc.config.userProvisioning.desc@@",
+        "options": [
+          {
+            "value": "true",
+            "label": "Enabled"
+          }
+        ]
+      },
+      {
+        "name": "editableUserProfile",
+        "label": "@@idp.plugin.oidc.config.editableUserProfile.label@@",
+        "type": "checkbox",
+        "control_field": "userProvisioning",
+        "control_value": "true",
+        "description": "@@idp.plugin.oidc.config.editableUserProfile.desc@@",
+        "options": [
+          {
+            "value": "true",
+            "label": "Enabled"
+          }
+        ]
+      },
+      {
+        "name": "automaticLinking",
+        "label": "@@idp.plugin.oidc.config.automaticLinking.label@@",
+        "type": "checkbox",
+        "description": "@@idp.plugin.oidc.config.automaticLinking.desc@@",
+        "options": [
+          {
+            "value": "true",
+            "label": "Enabled"
+          }
+        ]
+      },
+      {
+        "name": "loginButtonTemplate",
+        "label": "@@idp.plugin.oidc.config.loginButtonTemplate.label@@",
+        "type": "icon-textfield",
+        "required": "true",
+        "description": "@@idp.plugin.oidc.config.loginButtonTemplate.desc@@"
+      }
+    ]
+  }
+]
